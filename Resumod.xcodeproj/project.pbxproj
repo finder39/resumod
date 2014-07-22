@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D824AE521977546800B4A318 /* WorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824AE511977546800B4A318 /* WorkModel.swift */; };
+		D824AE541977552700B4A318 /* EducationModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = D824AE531977552700B4A318 /* EducationModel.swift */; };
+		D824AE55197755BC00B4A318 /* EducationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824AE531977552700B4A318 /* EducationModel.swift */; };
 		D8BA6CC31977379C0086B737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CC21977379C0086B737 /* AppDelegate.swift */; };
 		D8BA6CC51977379C0086B737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CC41977379C0086B737 /* ViewController.swift */; };
 		D8BA6CC81977379C0086B737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8BA6CC61977379C0086B737 /* Main.storyboard */; };
 		D8BA6CCA1977379C0086B737 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8BA6CC91977379C0086B737 /* Images.xcassets */; };
 		D8BA6CD61977379C0086B737 /* ResumodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CD51977379C0086B737 /* ResumodTests.swift */; };
+		D8BA6CE0197738DD0086B737 /* ResumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CDF197738DD0086B737 /* ResumeModel.swift */; };
+		D8BA6CE319773AA30086B737 /* BioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CE219773AA30086B737 /* BioModel.swift */; };
+		D8C8794A1979FD030070ACAA /* SkillsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C879491979FD030070ACAA /* SkillsModel.swift */; };
+		D8C8794C197A06AA0070ACAA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8794B197A06AA0070ACAA /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D824AE511977546800B4A318 /* WorkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkModel.swift; sourceTree = "<group>"; };
+		D824AE531977552700B4A318 /* EducationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationModel.swift; sourceTree = "<group>"; };
 		D8BA6CBD1977379C0086B737 /* Resumod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resumod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BA6CC11977379C0086B737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8BA6CC21977379C0086B737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +43,10 @@
 		D8BA6CCF1977379C0086B737 /* ResumodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BA6CD41977379C0086B737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8BA6CD51977379C0086B737 /* ResumodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumodTests.swift; sourceTree = "<group>"; };
+		D8BA6CDF197738DD0086B737 /* ResumeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeModel.swift; sourceTree = "<group>"; };
+		D8BA6CE219773AA30086B737 /* BioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioModel.swift; sourceTree = "<group>"; };
+		D8C879491979FD030070ACAA /* SkillsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsModel.swift; sourceTree = "<group>"; };
+		D8C8794B197A06AA0070ACAA /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +91,10 @@
 				D8BA6CC21977379C0086B737 /* AppDelegate.swift */,
 				D8BA6CC41977379C0086B737 /* ViewController.swift */,
 				D8BA6CC61977379C0086B737 /* Main.storyboard */,
+				D8C8794B197A06AA0070ACAA /* DataManager.swift */,
 				D8BA6CC91977379C0086B737 /* Images.xcassets */,
 				D8BA6CC01977379C0086B737 /* Supporting Files */,
+				D8BA6CE119773A970086B737 /* Models */,
 			);
 			path = Resumod;
 			sourceTree = "<group>";
@@ -107,6 +122,18 @@
 				D8BA6CD41977379C0086B737 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8BA6CE119773A970086B737 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8BA6CDF197738DD0086B737 /* ResumeModel.swift */,
+				D8BA6CE219773AA30086B737 /* BioModel.swift */,
+				D824AE511977546800B4A318 /* WorkModel.swift */,
+				D824AE531977552700B4A318 /* EducationModel.swift */,
+				D8C879491979FD030070ACAA /* SkillsModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8BA6CC81977379C0086B737 /* Main.storyboard in Resources */,
+				D824AE541977552700B4A318 /* EducationModel.swift in Resources */,
 				D8BA6CCA1977379C0086B737 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +236,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D824AE55197755BC00B4A318 /* EducationModel.swift in Sources */,
+				D8C8794C197A06AA0070ACAA /* DataManager.swift in Sources */,
+				D824AE521977546800B4A318 /* WorkModel.swift in Sources */,
+				D8BA6CE319773AA30086B737 /* BioModel.swift in Sources */,
+				D8C8794A1979FD030070ACAA /* SkillsModel.swift in Sources */,
 				D8BA6CC51977379C0086B737 /* ViewController.swift in Sources */,
+				D8BA6CE0197738DD0086B737 /* ResumeModel.swift in Sources */,
 				D8BA6CC31977379C0086B737 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Resumod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -337,6 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Resumod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -395,6 +431,7 @@
 				D8BA6CDB1977379C0086B737 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8BA6CDC1977379C0086B737 /* Build configuration list for PBXNativeTarget "ResumodTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +440,7 @@
 				D8BA6CDE1977379C0086B737 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,6 +13,15 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    DataManager.sharedInstance.getTestResume()
+    DataManager.sharedInstance.getResume(user_id: 1,
+      onSuccess: {resume -> Void in
+        println(resume.version)
+        println(resume.bio.firstName)
+        println(resume.bio.email["personal"])
+      },
+      onFailure:nil
+    )
   }
 
   override func didReceiveMemoryWarning() {
