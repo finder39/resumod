@@ -20,4 +20,30 @@ class WorkModel {
   init() {
     
   }
+  
+  init(fromJSONData json:Dictionary<String, AnyObject>) {
+    if let company = (json["company"] as AnyObject?) as? String {
+      self.company = company
+    }
+    if let position = (json["position"] as AnyObject?) as? String {
+      self.position = position
+    }
+    if let website = (json["website"] as AnyObject?) as? String {
+      self.website = website
+    }
+    if let startDate = (json["startDate"] as AnyObject?) as? String {
+      self.startDate = startDate
+    }
+    if let endDate = (json["endDate"] as AnyObject?) as? String {
+      self.endDate = endDate
+    }
+    if let summary = (json["summary"] as AnyObject?) as? String {
+      self.summary = summary
+    }
+    if let highlights = (json["highlights"] as AnyObject?) as? [String] {
+      for highlight in highlights {
+        self.highlights += highlight
+      }
+    }
+  }
 }
