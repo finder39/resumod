@@ -30,19 +30,20 @@ class ResumeModel {
     if let bio = (json["bio"] as AnyObject?) as? Dictionary<String, AnyObject> {
       self.bio = BioModel(fromJSONData: json["bio"]! as Dictionary)
     }
-    if let work = (json["work"] as AnyObject?) as? Dictionary<String, AnyObject> {
+    if let work = (json["work"] as AnyObject?) as? [Dictionary<String, AnyObject>] {
       for workItem in work {
-        self.work += WorkModel(fromJSONData: json["work"]! as Dictionary)
+        self.work += WorkModel(fromJSONData: workItem)
       }
     }
-    if let education = (json["education"] as AnyObject?) as? Dictionary<String, AnyObject> {
+    if let education = (json["education"] as AnyObject?) as? [Dictionary<String, AnyObject>] {
       for educationItem in education {
-        self.education += EducationModel(fromJSONData: json["education"]! as Dictionary)
+        println(educationItem)
+        self.education += EducationModel(fromJSONData: educationItem)
       }
     }
-    if let skills = (json["skills"] as AnyObject?) as? Dictionary<String, AnyObject> {
+    if let skills = (json["skills"] as AnyObject?) as? [Dictionary<String, AnyObject>] {
       for skill in skills {
-        self.skills += SkillModel(fromJSONData: json["skills"]! as Dictionary)
+        self.skills += SkillModel(fromJSONData: skill)
       }
     }
   }

@@ -19,10 +19,18 @@
 		D8BA6CE319773AA30086B737 /* BioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CE219773AA30086B737 /* BioModel.swift */; };
 		D8C8794A1979FD030070ACAA /* SkillsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C879491979FD030070ACAA /* SkillsModel.swift */; };
 		D8C8794C197A06AA0070ACAA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8794B197A06AA0070ACAA /* DataManager.swift */; };
+		D8F1608919802CFD0006C0C7 /* DataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F1608819802CFD0006C0C7 /* DataManagerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		D8BA6CD01977379C0086B737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8BA6CB51977379C0086B737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8BA6CBC1977379C0086B737;
+			remoteInfo = Resumod;
+		};
+		D8F1608A19802D960006C0C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8BA6CB51977379C0086B737 /* Project object */;
 			proxyType = 1;
@@ -47,6 +55,7 @@
 		D8BA6CE219773AA30086B737 /* BioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioModel.swift; sourceTree = "<group>"; };
 		D8C879491979FD030070ACAA /* SkillsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsModel.swift; sourceTree = "<group>"; };
 		D8C8794B197A06AA0070ACAA /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D8F1608819802CFD0006C0C7 /* DataManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				D8BA6CD51977379C0086B737 /* ResumodTests.swift */,
+				D8F1608819802CFD0006C0C7 /* DataManagerTest.swift */,
 				D8BA6CD31977379C0086B737 /* Supporting Files */,
 			);
 			path = ResumodTests;
@@ -168,6 +178,7 @@
 			);
 			dependencies = (
 				D8BA6CD11977379C0086B737 /* PBXTargetDependency */,
+				D8F1608B19802D960006C0C7 /* PBXTargetDependency */,
 			);
 			name = ResumodTests;
 			productName = ResumodTests;
@@ -252,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8BA6CD61977379C0086B737 /* ResumodTests.swift in Sources */,
+				D8F1608919802CFD0006C0C7 /* DataManagerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +274,11 @@
 			isa = PBXTargetDependency;
 			target = D8BA6CBC1977379C0086B737 /* Resumod */;
 			targetProxy = D8BA6CD01977379C0086B737 /* PBXContainerItemProxy */;
+		};
+		D8F1608B19802D960006C0C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8BA6CBC1977379C0086B737 /* Resumod */;
+			targetProxy = D8F1608A19802D960006C0C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

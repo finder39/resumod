@@ -1,0 +1,54 @@
+{ 
+  "version":"0.0.2",
+  "bio":{
+    "firstName":"Joseph",
+    "lastName":"Neuman",
+    "email":{
+      "personal":"blank@gmail.com"
+    },
+    "summary":"Long live Octo-StrongBad",
+    "location":{
+      "city":"Whitewater",
+      "state":"WI"
+    },
+    "profiles":{
+      "github":"finder39"
+    }
+  },
+  "work":[
+    {
+      "company":"Slipstream, LLC.",
+      "position":"The App Guy",
+      "website":"www.gostrive.com",
+      "startDate":"2013-09-01",
+      "endDate":"2014-07-07",
+      "summary":"Developed and assisted in the design of the iOS application in Objective-C. Also wrote much of the web application API’s in NodeJS and PHP on both AWS (Amazon Web Services) and Linode servers running Ubuntu Server, developed the web application in NodeJS and jQuery, developed a content management system for clients in PHP and jQuery, managed the mySQL databases, and created software to integrate with partner companies in NodeJS. Made key decisions on scope and deadlines as new key features or integrations were discussed.",
+      "highlights":[
+        "Developed and assisted in the design of the iOS application.",
+        "Wrote much of the web application API’s, managed the database, and created software to integrate with partner companies."
+      ]
+    },
+    {
+      "company":"Got Apps Inc",
+      "position":"Founder and President",
+      "website":"www.gostrive.com",
+      "startDate":"2011-06-01",
+      "endDate":"2013-09-01",
+      "summary":"Brought together a team of exceptional developers and designers to create intelligent and intuitive apps that create an engaging and exciting experience for users. Built relationships by working directly with clients solving problems and building their ideas. Helped clients iron out their ideas, build a scope document, determine and manage deadlines, and improve their idea to be more applicable to the mobile market. Developed iOS applications in Objective-C, managed development of other platforms (PHP based web applications and API’s on AWS), and oversaw design direction with a focus on UI/UX.",
+      "highlights":[
+        "Bringing together a team of exceptional developers and designers to create intelligent and intuitive apps that create an engaging and exciting experience for users.",
+        "Built relationships by working directly with clients solving problems and building their ideas.",
+        "Development of iOS applications, and managing other platforms."
+      ]
+    }
+  ],
+  "education":[
+    {
+      "institution":"Northern Illinois University",
+      "area":"Computer Science",
+      "study":"Bachelor",
+      "startDate":"2008-08-01",
+      "endDate":"2012-08-01"
+    }
+  ]
+}

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DataManager {
+class DataManager : NSObject {
   //initiation of sharedInstance
   class var sharedInstance:DataManager {
     struct Static {
@@ -21,11 +21,30 @@ class DataManager {
   
   // private functions
   
-  func getTestResume() -> ResumeModel {
-    let testResume:Dictionary<String, AnyObject> = [ "version":"0.0.1", "bio":[ "firstName":"Joseph", "lastName":"Neuman", "email":[ "personal":"blank@gmail.com" ] ] ]
-    var resume = ResumeModel(fromJSONData: testResume);
-    
-    return resume
+  func getTestResume(#onSuccess:(resume:ResumeModel)->(), onFailure:((error:NSError)->())?) {
+    let path = NSBundle.mainBundle().pathForResource("ExampleResume", ofType: "json")
+    println(path)
+    println("meow")
+    let url = NSURL(fileURLWithPath: path)
+    var task = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in
+      println("Task completed")
+      if error {
+        println(error.localizedDescription)
+      }
+      var err: NSError?
+      var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as? Dictionary<String, AnyObject>
+      if err {
+        println("JSON Error \(err!.localizedDescription)")
+      }
+      println(err)
+      var results: Dictionary = jsonResult as Dictionary
+      // here is where I'd call the callback or delegate method
+      dispatch_async(dispatch_get_main_queue(), {
+        //doing main thread things
+        onSuccess(resume: ResumeModel(fromJSONData: results))
+        })
+      })
+    task.resume()
   }
   
   // Using closure (swift equivilent of blocks)
@@ -48,7 +67,6 @@ class DataManager {
         //doing main thread things
         onSuccess(resume: ResumeModel(fromJSONData: results))
       })
-      println("Success!")
     })
     task.resume()
   }
