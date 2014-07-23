@@ -37,7 +37,6 @@ class ResumeModel {
     }
     if let education = (json["education"] as AnyObject?) as? [Dictionary<String, AnyObject>] {
       for educationItem in education {
-        println(educationItem)
         self.education += EducationModel(fromJSONData: educationItem)
       }
     }

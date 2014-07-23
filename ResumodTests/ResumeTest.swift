@@ -31,6 +31,7 @@ class ResumeTest: XCTestCase {
       XCTAssertEqual(resume.work[1].company, "Got Apps Inc", "work company name wrong")
       XCTAssertEqual(resume.work[0].highlights[0], "Developed and assisted in the design of the iOS application.", "work highlight wrong")
       XCTAssertEqual(resume.education[0].institution, "Northern Illinois University", "education institution wrong")
+      
       expectation.fulfill()
       }, onFailure: nil)
     

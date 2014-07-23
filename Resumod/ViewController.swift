@@ -15,9 +15,7 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
     DataManager.sharedInstance.getResume(user_id: 1,
       onSuccess: {resume -> Void in
-        println(resume.version)
-        println(resume.bio.firstName)
-        println(resume.bio.email["personal"])
+        
       },
       onFailure:nil
     )
