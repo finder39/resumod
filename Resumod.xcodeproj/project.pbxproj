@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D824AE521977546800B4A318 /* WorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824AE511977546800B4A318 /* WorkModel.swift */; };
-		D824AE541977552700B4A318 /* EducationModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = D824AE531977552700B4A318 /* EducationModel.swift */; };
 		D824AE55197755BC00B4A318 /* EducationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824AE531977552700B4A318 /* EducationModel.swift */; };
 		D8BA6CC31977379C0086B737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CC21977379C0086B737 /* AppDelegate.swift */; };
 		D8BA6CC51977379C0086B737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CC41977379C0086B737 /* ViewController.swift */; };
@@ -20,17 +19,28 @@
 		D8C8794A1979FD030070ACAA /* SkillsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C879491979FD030070ACAA /* SkillsModel.swift */; };
 		D8C8794C197A06AA0070ACAA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8794B197A06AA0070ACAA /* DataManager.swift */; };
 		D8F1608919802CFD0006C0C7 /* DataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F1608819802CFD0006C0C7 /* DataManagerTest.swift */; };
+		D8F1608F19803F280006C0C7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8794B197A06AA0070ACAA /* DataManager.swift */; };
+		D8F160981980443D0006C0C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CC21977379C0086B737 /* AppDelegate.swift */; };
+		D8F160991980443D0006C0C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CC41977379C0086B737 /* ViewController.swift */; };
+		D8F1609A1980443D0006C0C7 /* ResumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CDF197738DD0086B737 /* ResumeModel.swift */; };
+		D8F1609B1980443D0006C0C7 /* BioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CE219773AA30086B737 /* BioModel.swift */; };
+		D8F1609C1980443D0006C0C7 /* WorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824AE511977546800B4A318 /* WorkModel.swift */; };
+		D8F1609D1980443D0006C0C7 /* EducationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824AE531977552700B4A318 /* EducationModel.swift */; };
+		D8F1609E1980443D0006C0C7 /* SkillsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C879491979FD030070ACAA /* SkillsModel.swift */; };
+		D8F160A2198046AD0006C0C7 /* ExampleResume.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F160A1198046AD0006C0C7 /* ExampleResume.json */; };
+		D8F160A3198046AD0006C0C7 /* ExampleResume.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F160A1198046AD0006C0C7 /* ExampleResume.json */; };
+		D8F160A5198047810006C0C7 /* ResumeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F160A4198047810006C0C7 /* ResumeTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D8BA6CD01977379C0086B737 /* PBXContainerItemProxy */ = {
+		D8F1608A19802D960006C0C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8BA6CB51977379C0086B737 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D8BA6CBC1977379C0086B737;
 			remoteInfo = Resumod;
 		};
-		D8F1608A19802D960006C0C7 /* PBXContainerItemProxy */ = {
+		D8F1608C19802D960006C0C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8BA6CB51977379C0086B737 /* Project object */;
 			proxyType = 1;
@@ -56,6 +66,8 @@
 		D8C879491979FD030070ACAA /* SkillsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsModel.swift; sourceTree = "<group>"; };
 		D8C8794B197A06AA0070ACAA /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		D8F1608819802CFD0006C0C7 /* DataManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerTest.swift; sourceTree = "<group>"; };
+		D8F160A1198046AD0006C0C7 /* ExampleResume.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ExampleResume.json; sourceTree = "<group>"; };
+		D8F160A4198047810006C0C7 /* ResumeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 				D8BA6CC41977379C0086B737 /* ViewController.swift */,
 				D8BA6CC61977379C0086B737 /* Main.storyboard */,
 				D8C8794B197A06AA0070ACAA /* DataManager.swift */,
+				D8F160A1198046AD0006C0C7 /* ExampleResume.json */,
 				D8BA6CC91977379C0086B737 /* Images.xcassets */,
 				D8BA6CC01977379C0086B737 /* Supporting Files */,
 				D8BA6CE119773A970086B737 /* Models */,
@@ -121,6 +134,7 @@
 			children = (
 				D8BA6CD51977379C0086B737 /* ResumodTests.swift */,
 				D8F1608819802CFD0006C0C7 /* DataManagerTest.swift */,
+				D8F160A4198047810006C0C7 /* ResumeTest.swift */,
 				D8BA6CD31977379C0086B737 /* Supporting Files */,
 			);
 			path = ResumodTests;
@@ -177,8 +191,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				D8BA6CD11977379C0086B737 /* PBXTargetDependency */,
 				D8F1608B19802D960006C0C7 /* PBXTargetDependency */,
+				D8F1608D19802D960006C0C7 /* PBXTargetDependency */,
 			);
 			name = ResumodTests;
 			productName = ResumodTests;
@@ -227,8 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F160A2198046AD0006C0C7 /* ExampleResume.json in Resources */,
 				D8BA6CC81977379C0086B737 /* Main.storyboard in Resources */,
-				D824AE541977552700B4A318 /* EducationModel.swift in Resources */,
 				D8BA6CCA1977379C0086B737 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F160A3198046AD0006C0C7 /* ExampleResume.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F160981980443D0006C0C7 /* AppDelegate.swift in Sources */,
+				D8F160A5198047810006C0C7 /* ResumeTest.swift in Sources */,
+				D8F160991980443D0006C0C7 /* ViewController.swift in Sources */,
+				D8F1609A1980443D0006C0C7 /* ResumeModel.swift in Sources */,
+				D8F1609B1980443D0006C0C7 /* BioModel.swift in Sources */,
+				D8F1609C1980443D0006C0C7 /* WorkModel.swift in Sources */,
+				D8F1609D1980443D0006C0C7 /* EducationModel.swift in Sources */,
+				D8F1609E1980443D0006C0C7 /* SkillsModel.swift in Sources */,
+				D8F1608F19803F280006C0C7 /* DataManager.swift in Sources */,
 				D8BA6CD61977379C0086B737 /* ResumodTests.swift in Sources */,
 				D8F1608919802CFD0006C0C7 /* DataManagerTest.swift in Sources */,
 			);
@@ -270,15 +294,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D8BA6CD11977379C0086B737 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D8BA6CBC1977379C0086B737 /* Resumod */;
-			targetProxy = D8BA6CD01977379C0086B737 /* PBXContainerItemProxy */;
-		};
 		D8F1608B19802D960006C0C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D8BA6CBC1977379C0086B737 /* Resumod */;
 			targetProxy = D8F1608A19802D960006C0C7 /* PBXContainerItemProxy */;
+		};
+		D8F1608D19802D960006C0C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8BA6CBC1977379C0086B737 /* Resumod */;
+			targetProxy = D8F1608C19802D960006C0C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

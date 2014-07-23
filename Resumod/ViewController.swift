@@ -9,13 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+  
+  @IBOutlet weak var labelName: UILabel!
                             
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     DataManager.sharedInstance.getResume(user_id: 1,
       onSuccess: {resume -> Void in
-        
+        dispatch_async(dispatch_get_main_queue(), {
+          self.labelName.text = "\(resume.bio.firstName) \(resume.bio.lastName)"
+          });
       },
       onFailure:nil
     )
@@ -25,7 +29,6 @@ class ViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-
 
 }
 
