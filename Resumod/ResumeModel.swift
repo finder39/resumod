@@ -24,7 +24,11 @@ class ResumeModel {
   }
   
   init(fromJSONData json:Dictionary<String, AnyObject>) {
-    version = json["version"]! as String
-    bio = BioModel(fromJSONData: json["bio"]! as Dictionary)
+    if let version = (json["version"] as AnyObject?) as? String {
+      self.version = version
+    }
+    if let bio = (json["bio"] as AnyObject?) as? Dictionary<String, AnyObject> {
+      self.bio = BioModel(fromJSONData: json["bio"]! as Dictionary)
+    }
   }
 }

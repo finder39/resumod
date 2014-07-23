@@ -44,11 +44,34 @@ class BioModel {
   }
   
   init(fromJSONData json:Dictionary<String, AnyObject>) {
-    firstName = json["firstName"]! as String
-    lastName = json["lastName"]! as String
-    if let emails = json["email"]! as? Dictionary<String, String> {
-      for (type, emailz) in emails {
-        email[type] = emailz
+    firstName = (json["firstName"] as AnyObject?) as String
+    lastName = (json["lastName"] as AnyObject?) as String
+    if let emails = (json["email"] as AnyObject?) as? Dictionary<String, String> {
+      for (type, email) in emails {
+        self.email[type] = email
+      }
+    }
+    if let phones:Dictionary<String, String> = (json["phone"] as AnyObject?) as? Dictionary<String, String> {
+      for (type, phone) in phones {
+        self.phone[type] = phone
+      }
+    }
+    if let summary = (json["summary"] as AnyObject?) as? String {
+      self.summary = summary
+    }
+    if let locations = (json["location"] as AnyObject?) as? Dictionary<String, String> {
+      for (type, location) in locations {
+        self.location[type] = location
+      }
+    }
+    if let websites = (json["websites"] as AnyObject?) as? Dictionary<String, String> {
+      for (type, website) in websites {
+        self.websites[type] = website
+      }
+    }
+    if let profiles = (json["phone"] as AnyObject?) as? Dictionary<String, String> {
+      for (type, profile) in profiles {
+        self.profiles[type] = profile
       }
     }
   }
