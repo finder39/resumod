@@ -35,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D8C15AAD1981851C0013A8A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8BA6CB51977379C0086B737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8BA6CBC1977379C0086B737;
+			remoteInfo = Resumod;
+		};
 		D8F1608A19802D960006C0C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8BA6CB51977379C0086B737 /* Project object */;
@@ -66,6 +73,7 @@
 		D8BA6CD51977379C0086B737 /* ResumodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumodTests.swift; sourceTree = "<group>"; };
 		D8BA6CDF197738DD0086B737 /* ResumeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeModel.swift; sourceTree = "<group>"; };
 		D8BA6CE219773AA30086B737 /* BioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioModel.swift; sourceTree = "<group>"; };
+		D8C15AA81981811A0013A8A0 /* Resumod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Resumod-Bridging-Header.h"; sourceTree = "<group>"; };
 		D8C879491979FD030070ACAA /* SkillsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsModel.swift; sourceTree = "<group>"; };
 		D8C8794B197A06AA0070ACAA /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		D8F1608819802CFD0006C0C7 /* DataManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerTest.swift; sourceTree = "<group>"; };
@@ -112,6 +120,7 @@
 		D8BA6CBF1977379C0086B737 /* Resumod */ = {
 			isa = PBXGroup;
 			children = (
+				D8C15AA81981811A0013A8A0 /* Resumod-Bridging-Header.h */,
 				D8BA6CC21977379C0086B737 /* AppDelegate.swift */,
 				D8BA6CC41977379C0086B737 /* ViewController.swift */,
 				D8BA6CC61977379C0086B737 /* Main.storyboard */,
@@ -197,6 +206,7 @@
 			dependencies = (
 				D8F1608B19802D960006C0C7 /* PBXTargetDependency */,
 				D8F1608D19802D960006C0C7 /* PBXTargetDependency */,
+				D8C15AAE1981851C0013A8A0 /* PBXTargetDependency */,
 			);
 			name = ResumodTests;
 			productName = ResumodTests;
@@ -300,6 +310,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D8C15AAE1981851C0013A8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8BA6CBC1977379C0086B737 /* Resumod */;
+			targetProxy = D8C15AAD1981851C0013A8A0 /* PBXContainerItemProxy */;
+		};
 		D8F1608B19802D960006C0C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D8BA6CBC1977379C0086B737 /* Resumod */;
@@ -406,10 +421,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Resumod/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Resumod/Resumod-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -418,10 +436,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Resumod/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Resumod/Resumod-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -440,6 +460,7 @@
 				INFOPLIST_FILE = ResumodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Resumod/Resumod-Bridging-Header.h";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -455,6 +476,7 @@
 				INFOPLIST_FILE = ResumodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Resumod/Resumod-Bridging-Header.h";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;

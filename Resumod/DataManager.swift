@@ -46,7 +46,7 @@ class DataManager : NSObject {
   
   // Using closure (swift equivilent of blocks)
   func getResume(#user_id:Int, onSuccess:(resume:ResumeModel)->(), onFailure:((error:NSError)->())?) {
-    let url = NSURL(string: "https://gist.githubusercontent.com/finder39/35336449bb3092a25821/raw/3f82bd67ac6389ed41673ec399a1aeaf07b2b6d4/resume.json")
+    let url = NSURL(string: "https://gist.githubusercontent.com/finder39/35336449bb3092a25821/raw/3b8d831067b5eaa34ee811198ebb173dbc126d8c/resume.json")
     var task = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in
       if error {
         println(error.localizedDescription)

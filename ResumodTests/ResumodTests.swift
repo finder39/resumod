@@ -33,4 +33,7 @@ class ResumodTests: XCTestCase {
         }
     }
 
+  func testMD5() {
+    XCTAssertEqual("MyEmailAddress@example.com".lowercaseString.md5()!, "0bc83cb571cd1c50ba6f3e8a78ef1346", "MD5 convertor is incorrect")
+  }
 }
