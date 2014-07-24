@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D824AE521977546800B4A318 /* WorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824AE511977546800B4A318 /* WorkModel.swift */; };
 		D824AE55197755BC00B4A318 /* EducationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824AE531977552700B4A318 /* EducationModel.swift */; };
+		D854E85E1980B860004A895F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D854E85D1980B860004A895F /* Constants.swift */; };
 		D8BA6CC31977379C0086B737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CC21977379C0086B737 /* AppDelegate.swift */; };
 		D8BA6CC51977379C0086B737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CC41977379C0086B737 /* ViewController.swift */; };
 		D8BA6CC81977379C0086B737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8BA6CC61977379C0086B737 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 		D8BA6CD61977379C0086B737 /* ResumodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CD51977379C0086B737 /* ResumodTests.swift */; };
 		D8BA6CE0197738DD0086B737 /* ResumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CDF197738DD0086B737 /* ResumeModel.swift */; };
 		D8BA6CE319773AA30086B737 /* BioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA6CE219773AA30086B737 /* BioModel.swift */; };
+		D8C15AA41980BFE20013A8A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D854E85D1980B860004A895F /* Constants.swift */; };
 		D8C8794A1979FD030070ACAA /* SkillsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C879491979FD030070ACAA /* SkillsModel.swift */; };
 		D8C8794C197A06AA0070ACAA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8794B197A06AA0070ACAA /* DataManager.swift */; };
 		D8F1608919802CFD0006C0C7 /* DataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F1608819802CFD0006C0C7 /* DataManagerTest.swift */; };
@@ -52,6 +54,7 @@
 /* Begin PBXFileReference section */
 		D824AE511977546800B4A318 /* WorkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkModel.swift; sourceTree = "<group>"; };
 		D824AE531977552700B4A318 /* EducationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationModel.swift; sourceTree = "<group>"; };
+		D854E85D1980B860004A895F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D8BA6CBD1977379C0086B737 /* Resumod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resumod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BA6CC11977379C0086B737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8BA6CC21977379C0086B737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 				D8BA6CC61977379C0086B737 /* Main.storyboard */,
 				D8C8794B197A06AA0070ACAA /* DataManager.swift */,
 				D8F160A1198046AD0006C0C7 /* ExampleResume.json */,
+				D854E85D1980B860004A895F /* Constants.swift */,
 				D8BA6CC91977379C0086B737 /* Images.xcassets */,
 				D8BA6CC01977379C0086B737 /* Supporting Files */,
 				D8BA6CE119773A970086B737 /* Models */,
@@ -270,6 +274,7 @@
 				D8BA6CC51977379C0086B737 /* ViewController.swift in Sources */,
 				D8BA6CE0197738DD0086B737 /* ResumeModel.swift in Sources */,
 				D8BA6CC31977379C0086B737 /* AppDelegate.swift in Sources */,
+				D854E85E1980B860004A895F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +293,7 @@
 				D8F1608F19803F280006C0C7 /* DataManager.swift in Sources */,
 				D8BA6CD61977379C0086B737 /* ResumodTests.swift in Sources */,
 				D8F1608919802CFD0006C0C7 /* DataManagerTest.swift in Sources */,
+				D8C15AA41980BFE20013A8A0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

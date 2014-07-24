@@ -15,6 +15,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    navigationController.navigationBar.barTintColor = CONSTANTS().color1
     DataManager.sharedInstance.getResume(user_id: 1,
       onSuccess: {resume -> Void in
         dispatch_async(dispatch_get_main_queue(), {
