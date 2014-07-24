@@ -7,7 +7,7 @@
 * Create a fun and interactive way to view a resume
 * Learn and share knowledge of Swift
 * Be corrected by the everyone when I make a horrendously embarrassing mistake in Swift
-* Try to little to no third party libraries
+* Try to use little to no third party libraries
 
 ### Structure:
 * Proper classing and true OOP
