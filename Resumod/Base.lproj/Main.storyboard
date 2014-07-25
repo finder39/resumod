@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cSt-HM-53r">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
     </dependencies>
     <scenes>
@@ -19,9 +18,6 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144" translatesAutoresizingMaskIntoConstraints="NO" id="CVM-kl-kvU">
                                 <rect key="frame" x="20" y="86" width="144" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="S93-Nt-vr3"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,42 +25,55 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UPn-QC-3zL">
                                 <rect key="frame" x="172" y="86" width="128" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="Kbz-Bj-RrU"/>
+                                    <constraint firstAttribute="width" constant="128" id="DNi-FH-dSr"/>
+                                    <constraint firstAttribute="height" constant="128" id="MUU-Mv-ied"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Summary" translatesAutoresizingMaskIntoConstraints="NO" id="JHQ-Qp-TSk">
-                                <rect key="frame" x="20" y="230" width="280" height="139"/>
-                                <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.41960784309999999" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="139" id="n3s-t8-iOu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144" translatesAutoresizingMaskIntoConstraints="NO" id="uEZ-3A-IHi">
                                 <rect key="frame" x="20" y="157" width="144" height="57"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="gNy-r5-q82"/>
+                                    <constraint firstAttribute="height" constant="57" id="tfh-t8-cdU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Bio info" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzG-Ph-kHS">
+                                <rect key="frame" x="20" y="222" width="280" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.41960784309999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uEt-ZP-a63"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Summary" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHQ-Qp-TSk">
+                                <rect key="frame" x="20" y="260" width="280" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.41960784309999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yef-aM-JAI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="UPn-QC-3zL" secondAttribute="trailing" constant="20" symbolic="YES" id="3Vz-RQ-lTs"/>
-                            <constraint firstItem="uEZ-3A-IHi" firstAttribute="leading" secondItem="JHQ-Qp-TSk" secondAttribute="leading" id="AMV-dY-RBj"/>
-                            <constraint firstItem="JHQ-Qp-TSk" firstAttribute="top" secondItem="uEZ-3A-IHi" secondAttribute="bottom" constant="16" id="EeC-hA-oyD"/>
-                            <constraint firstItem="CVM-kl-kvU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="RMI-jj-rVO"/>
-                            <constraint firstItem="uEZ-3A-IHi" firstAttribute="leading" secondItem="CVM-kl-kvU" secondAttribute="leading" id="Rvi-Wt-LKD"/>
-                            <constraint firstItem="uEZ-3A-IHi" firstAttribute="top" secondItem="CVM-kl-kvU" secondAttribute="bottom" constant="8" symbolic="YES" id="SH2-bs-gVu"/>
-                            <constraint firstItem="UPn-QC-3zL" firstAttribute="leading" secondItem="CVM-kl-kvU" secondAttribute="trailing" constant="8" symbolic="YES" id="ShY-em-7dH"/>
-                            <constraint firstItem="UPn-QC-3zL" firstAttribute="trailing" secondItem="JHQ-Qp-TSk" secondAttribute="trailing" id="aXz-Y8-FVI"/>
-                            <constraint firstItem="CVM-kl-kvU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="bIs-F6-B4V"/>
-                            <constraint firstItem="UPn-QC-3zL" firstAttribute="top" secondItem="CVM-kl-kvU" secondAttribute="top" id="dmy-S3-FKM"/>
-                            <constraint firstItem="UPn-QC-3zL" firstAttribute="leading" secondItem="uEZ-3A-IHi" secondAttribute="trailing" constant="8" symbolic="YES" id="xZ4-fH-QCt"/>
-                            <constraint firstItem="UPn-QC-3zL" firstAttribute="bottom" secondItem="uEZ-3A-IHi" secondAttribute="bottom" id="yf0-Lz-tlt"/>
+                            <constraint firstItem="JHQ-Qp-TSk" firstAttribute="trailing" secondItem="BzG-Ph-kHS" secondAttribute="trailing" id="6GO-Ol-8ie"/>
+                            <constraint firstItem="CVM-kl-kvU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="95r-bv-cXk"/>
+                            <constraint firstItem="UPn-QC-3zL" firstAttribute="leading" secondItem="CVM-kl-kvU" secondAttribute="trailing" constant="8" symbolic="YES" id="Al0-Kg-h03"/>
+                            <constraint firstItem="CVM-kl-kvU" firstAttribute="leading" secondItem="uEZ-3A-IHi" secondAttribute="leading" id="BaO-ri-9RE"/>
+                            <constraint firstItem="BzG-Ph-kHS" firstAttribute="trailing" secondItem="UPn-QC-3zL" secondAttribute="trailing" id="CSn-L5-gQO"/>
+                            <constraint firstItem="CVM-kl-kvU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="G7f-wQ-Csk"/>
+                            <constraint firstItem="uEZ-3A-IHi" firstAttribute="top" secondItem="CVM-kl-kvU" secondAttribute="bottom" constant="8" symbolic="YES" id="UW0-i3-4Wd"/>
+                            <constraint firstItem="BzG-Ph-kHS" firstAttribute="top" secondItem="uEZ-3A-IHi" secondAttribute="bottom" constant="8" symbolic="YES" id="W4s-fz-9nC"/>
+                            <constraint firstItem="BzG-Ph-kHS" firstAttribute="top" secondItem="UPn-QC-3zL" secondAttribute="bottom" constant="8" symbolic="YES" id="aBf-k4-id2"/>
+                            <constraint firstAttribute="trailing" secondItem="UPn-QC-3zL" secondAttribute="trailing" constant="20" symbolic="YES" id="e7k-QL-2gR"/>
+                            <constraint firstItem="UPn-QC-3zL" firstAttribute="leading" secondItem="uEZ-3A-IHi" secondAttribute="trailing" constant="8" symbolic="YES" id="jDl-RK-kLI"/>
+                            <constraint firstItem="BzG-Ph-kHS" firstAttribute="leading" secondItem="uEZ-3A-IHi" secondAttribute="leading" id="k3N-IK-cua"/>
+                            <constraint firstItem="JHQ-Qp-TSk" firstAttribute="leading" secondItem="BzG-Ph-kHS" secondAttribute="leading" id="mOc-iL-2MY"/>
+                            <constraint firstItem="JHQ-Qp-TSk" firstAttribute="top" secondItem="BzG-Ph-kHS" secondAttribute="bottom" constant="8" symbolic="YES" id="nG6-Pn-ONZ"/>
+                            <constraint firstItem="UPn-QC-3zL" firstAttribute="top" secondItem="CVM-kl-kvU" secondAttribute="top" id="yuK-Vl-eMR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Resume" id="ima-8k-wXt"/>
@@ -72,8 +81,10 @@
                         <outlet property="imageGravatar" destination="UPn-QC-3zL" id="feL-Ef-qiW"/>
                         <outlet property="labelLocation" destination="uEZ-3A-IHi" id="4ID-tf-t2S"/>
                         <outlet property="labelName" destination="CVM-kl-kvU" id="iv6-jT-gCg"/>
+                        <outlet property="textBioInfo" destination="BzG-Ph-kHS" id="l5T-BP-PGG"/>
+                        <outlet property="textBioInfoHeightConstraint" destination="uEt-ZP-a63" id="Uco-Dp-Np6"/>
                         <outlet property="textSummary" destination="JHQ-Qp-TSk" id="flp-xH-jVA"/>
-                        <outlet property="textSummaryHeightConstraint" destination="n3s-t8-iOu" id="VhZ-Qd-8M8"/>
+                        <outlet property="textSummaryHeightConstraint" destination="yef-aM-JAI" id="HYj-iR-jpN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
