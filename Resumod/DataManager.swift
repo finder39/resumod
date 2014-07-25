@@ -68,6 +68,10 @@ class DataManager : NSObject {
     task.resume()
   }
   
+  func getResume(#user_id:Int, onSuccess:(resume:ResumeModel)->()) {
+    getResume(user_id: user_id, onSuccess: onSuccess, onFailure: nil)
+  }
+  
   func setImageView(imageView:UIImageView, withURL imageURL:String) {
     let url = NSURL(string: imageURL)
     var dataTask = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in

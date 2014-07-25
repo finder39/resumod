@@ -71,8 +71,7 @@ class ViewController: UIViewController {
           let imageURL = "https://secure.gravatar.com/avatar/" + resume.bio.email["work"]!.lowercaseString.md5() + "?s=256&d=mm"
           DataManager.sharedInstance.setImageView(self.imageGravatar, withURL: imageURL)
         })
-      },
-      onFailure:nil
+      }
     )
   }
 
