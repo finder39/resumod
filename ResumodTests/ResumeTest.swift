@@ -28,6 +28,7 @@ class ResumeTest: XCTestCase {
       XCTAssertEqual(resume.version, "0.0.2", "Version wrong")
       XCTAssertEqual(resume.bio.firstName, "Joseph", "firstName wrong")
       XCTAssertEqual(resume.bio.email["work"]!, "joe@gotappsusa.com", "email personal wrong")
+      XCTAssertEqual(resume.bio.profiles["github"]!, "finder39", "github  wrong")
       XCTAssertEqual(resume.work[1].company, "Got Apps Inc", "work company name wrong")
       XCTAssertEqual(resume.work[0].highlights[0], "Developed and assisted in the design of the iOS application.", "work highlight wrong")
       XCTAssertEqual(resume.education[0].institution, "Northern Illinois University", "education institution wrong")

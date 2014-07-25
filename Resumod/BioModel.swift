@@ -69,7 +69,7 @@ class BioModel {
         self.websites[type] = website
       }
     }
-    if let profiles = (json["phone"] as AnyObject?) as? Dictionary<String, String> {
+    if let profiles = (json["profiles"] as AnyObject?) as? Dictionary<String, String> {
       for (type, profile) in profiles {
         self.profiles[type] = profile
       }
