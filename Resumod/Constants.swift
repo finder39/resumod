@@ -22,6 +22,7 @@ struct CONSTANTS {
       let color1 = "a"
   }*/
   
+  // http://www.paletton.com/#uid=33K0I0kiCFn8GVde7NVmtwSqXtg
   let color1 = UIColor(red: 1, green: 0.945, blue: 0.42, alpha: 1)
   let color2 = UIColor(red: 0.369, green: 0.498, blue: 0.776, alpha: 1)
   let color3 = UIColor(red: 1, green: 0.576, blue: 0.42, alpha: 1)
