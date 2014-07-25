@@ -38,16 +38,8 @@ class ViewController: UIViewController {
           self.textSummary.text = resume.bio.summary
           
           // get image
-          let imageURL = NSURL(string: "https://secure.gravatar.com/avatar/" + resume.bio.email["work"]!.lowercaseString.md5() + "?s=256&d=mm")
-          var dataTask = DataManager.sharedInstance.session.dataTaskWithURL(imageURL, completionHandler: {data, response, error -> Void in
-            if !error {
-              dispatch_async(dispatch_get_main_queue(), {
-                let image = UIImage(data: data)
-                self.imageGravatar.image = image
-              })
-            }
-          })
-          dataTask.resume()
+          let imageURL = "https://secure.gravatar.com/avatar/" + resume.bio.email["work"]!.lowercaseString.md5() + "?s=256&d=mm"
+          DataManager.sharedInstance.setImageView(self.imageGravatar, withURL: imageURL)
         })
       },
       onFailure:nil

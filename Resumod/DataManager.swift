@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class DataManager : NSObject {
   //initiation of sharedInstance
@@ -65,5 +66,18 @@ class DataManager : NSObject {
       })
     })
     task.resume()
+  }
+  
+  func setImageView(imageView:UIImageView, withURL imageURL:String) {
+    let url = NSURL(string: imageURL)
+    var dataTask = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in
+      if !error {
+        dispatch_async(dispatch_get_main_queue(), {
+          let image = UIImage(data: data)
+          imageView.image = image
+          })
+      }
+      })
+    dataTask.resume()
   }
 }
