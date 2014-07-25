@@ -23,6 +23,13 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
     navigationController.navigationBar.barTintColor = CONSTANTS().color1
     
+    // selectable has to be true in storyboard or accessing font (and thus font size) will crash it
+    for theView in self.view.subviews {
+      if theView is UITextView {
+        (theView as UITextView).selectable = false
+      }
+    }
+    
     DataManager.sharedInstance.getResume(user_id: 1,
       onSuccess: {resume -> Void in
         dispatch_async(dispatch_get_main_queue(), {
@@ -39,18 +46,22 @@ class ViewController: UIViewController {
           self.labelLocation.text = location
           
           // setup and display bio info
-          var bioInfo = ""
+          var bioInfo = NSMutableAttributedString()
           for (key, value) in resume.bio.email {
             if !value.isEmpty {
-              bioInfo += "Email: \(value)"
+              var email = NSMutableAttributedString(string: "Email: \(value)")
+              email.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(self.textBioInfo.font.pointSize), range: NSMakeRange(0, 6))
+              bioInfo.appendAttributedString(email)
             }
           }
           for (key, value) in resume.bio.profiles {
             if !value.isEmpty {
-              bioInfo += "\n\(key): \(value)"
+              var profile = NSMutableAttributedString(string: "\n\(key): \(value)")
+              profile.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(self.textBioInfo.font.pointSize), range: NSMakeRange(1, key.utf16Count+1))
+              bioInfo.appendAttributedString(profile)
             }
           }
-          self.textBioInfo.text = bioInfo
+          self.textBioInfo.attributedText = bioInfo
           self.textBioInfoHeightConstraint.constant = ceil(self.textBioInfo.sizeThatFits(CGSizeMake(self.textBioInfo.frame.size.width, CGFloat.max)).height)
           
           self.textSummary.text = resume.bio.summary
