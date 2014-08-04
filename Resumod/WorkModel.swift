@@ -42,7 +42,7 @@ class WorkModel {
     }
     if let highlights = (json["highlights"] as AnyObject?) as? [String] {
       for highlight in highlights {
-        self.highlights += highlight
+        self.highlights.append(highlight)
       }
     }
   }

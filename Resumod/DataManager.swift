@@ -31,11 +31,11 @@ class DataManager : NSObject {
       }
       var err: NSError?
       var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as? Dictionary<String, AnyObject>
-      if err {
+      if err != nil {
         println(err)
         println("JSON Error \(err!.localizedDescription)")
       }
-      var results: Dictionary = jsonResult as Dictionary
+      var results: Dictionary = jsonResult! as Dictionary
       // here is where I'd call the callback or delegate method
       dispatch_async(dispatch_get_main_queue(), {
         //doing main thread things
@@ -54,11 +54,11 @@ class DataManager : NSObject {
       }
       var err: NSError?
       var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as? Dictionary<String, AnyObject>
-      if err {
+      if err != nil {
         println(err)
         println("JSON Error \(err!.localizedDescription)")
       }
-      var results: Dictionary = jsonResult as Dictionary
+      var results: Dictionary = jsonResult! as Dictionary
       // here is where I'd call the callback or delegate method
       dispatch_async(dispatch_get_main_queue(), {
         //doing main thread things

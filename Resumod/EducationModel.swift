@@ -42,7 +42,7 @@ class EducationModel {
     }
     if let courses = (json["courses"] as AnyObject?) as? [String] {
       for course in courses {
-        self.courses += course
+        self.courses.append(course)
       }
     }
   }

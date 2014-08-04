@@ -26,7 +26,7 @@ class SkillModel {
     }
     if let keywords = (json["keywords"] as AnyObject?) as? [String] {
       for keyword in keywords {
-        self.keywords += keyword
+        self.keywords.append(keyword)
       }
     }
   }

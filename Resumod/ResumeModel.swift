@@ -32,17 +32,17 @@ class ResumeModel {
     }
     if let work = (json["work"] as AnyObject?) as? [Dictionary<String, AnyObject>] {
       for workItem in work {
-        self.work += WorkModel(fromJSONData: workItem)
+        self.work.append(WorkModel(fromJSONData: workItem))
       }
     }
     if let education = (json["education"] as AnyObject?) as? [Dictionary<String, AnyObject>] {
       for educationItem in education {
-        self.education += EducationModel(fromJSONData: educationItem)
+        self.education.append(EducationModel(fromJSONData: educationItem))
       }
     }
     if let skills = (json["skills"] as AnyObject?) as? [Dictionary<String, AnyObject>] {
       for skill in skills {
-        self.skills += SkillModel(fromJSONData: skill)
+        self.skills.append(SkillModel(fromJSONData: skill))
       }
     }
   }
